@@ -1,0 +1,18 @@
+1.
+Create a class named 'Student' with String variable 'name' and integer variable 'roll_no'.
+Assign the value of roll_no as '2' and that of name as "John" by creating an object of the class Student in MAIN.
+
+2.
+create Class Person
+fields:
+    name
+    age
+    weight
+
+methods:
+    eat -> which where we pass as a parameter, how much has one eaten and we increase weight += calories_eaten / 100 accordingly and return new weight
+    run -> which where we pass as a parameter, how much burnt and we decrease weight -= calories_burn / 100 accordingly and return new weight
+
+create object of Person in main
+print each variable
+call each method and print whatever they return
