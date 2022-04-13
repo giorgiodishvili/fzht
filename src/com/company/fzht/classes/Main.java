@@ -27,6 +27,13 @@ public class Main {
         To create an object of Car, specify the class name, followed by the object name, and use the keyword new
         */
         Car car = new Car();
+        car.weight = 100;
+        car.color = "BLUE";
+
+        Car car2 = new Car();
+        car2.color = "BLACK";
+        car2.weight = 1000;
+
         //accessing variable through an object
         System.out.println(car.color);
         System.out.println(car.weight);

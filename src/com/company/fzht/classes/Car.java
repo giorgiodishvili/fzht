@@ -6,6 +6,7 @@ public class Car {
     // you can freely change value of this variables from outside or this values will be set...
     double weight = 5;
     String color = "Green";
+    double fuel = 50;
     // if you dont want it to be changed by anyone ever you can define `final` in front
     final int year = 2201;
 
@@ -15,6 +16,7 @@ public class Car {
 
     // methods
     public void drive() {
+        fuel -= 10;
         System.out.println(color + " car has started moving");
     }
 
@@ -22,7 +24,7 @@ public class Car {
         System.out.println(color + " car has stopped");
     }
 
-    private void accelerate(){
+    private void accelerate() {
         System.out.println(color + " car is accelerating");
     }
 }

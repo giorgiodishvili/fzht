@@ -4,13 +4,11 @@ import com.company.fzht.classes.Car;
 
 public class Main {
     public static void main(String[] args) {
-        printName("Mari");
-        double perimeter = squarePerimeter(5D);
+        printName("Mari"); // void
+        double perimeter = squarePerimeter(5D); // double
+        perimeter = perimeter + 12 + 21 ;
         System.out.println(perimeter);
         helloWorld();
-
-//        Car car = new Car();
-//        car.drive();
     }
 
     /**
@@ -36,19 +34,20 @@ public class Main {
      */
 
     /**
-     access modifier means from which place it can be through the program
-     1. public -> everywhere in a whole project
-     2. private -> in the class where it is defined only
-     3. protected ->  the class itself, same package and its subclasses (its subclasses can see it in other package as well)
-     4. default (when you dont write anything it has default modifier ) -> the class itself, throughout the package, subclasses(subclasses cant access/see it)
+     * access modifier means from which place it can be accessed through the program
+     * 1. public -> everywhere in a whole project
+     * 2. private -> in the class where it is defined only
+     * 3. protected ->  the class itself, same package and its subclasses (its subclasses can see it in other package as well)
+     * 4. default (when you dont write anything it has default modifier ) -> the class itself, throughout the package, subclasses(subclasses cant access/see it)
      */
-
     public static void printName(String name) {
         System.out.println("My name is " + name);
     }
 
     public static double squarePerimeter(double sideLength) {
-        return sideLength * 4;
+        System.out.println("Giorgi");
+        double a = sideLength * 4;
+        return a;
     }
 
     public static void helloWorld() {
